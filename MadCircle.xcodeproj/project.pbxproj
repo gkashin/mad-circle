@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B5A3ACA2618CB5A003EEF7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A3AC92618CB5A003EEF7C /* AppDelegate.swift */; };
 		5B5A3ACC2618CB5A003EEF7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A3ACB2618CB5A003EEF7C /* SceneDelegate.swift */; };
-		5B5A3ACE2618CB5A003EEF7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A3ACD2618CB5A003EEF7C /* ViewController.swift */; };
-		5B5A3AD12618CB5A003EEF7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5A3ACF2618CB5A003EEF7C /* Main.storyboard */; };
+		5B5A3ACE2618CB5A003EEF7C /* MadCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A3ACD2618CB5A003EEF7C /* MadCircleViewController.swift */; };
 		5B5A3AD32618CB5D003EEF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5A3AD22618CB5D003EEF7C /* Assets.xcassets */; };
 		5B5A3AD62618CB5D003EEF7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5A3AD42618CB5D003EEF7C /* LaunchScreen.storyboard */; };
 		5B5A3AE12618CB5E003EEF7C /* MadCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5A3AE02618CB5E003EEF7C /* MadCircleTests.swift */; };
@@ -38,8 +37,7 @@
 		5B5A3AC62618CB5A003EEF7C /* MadCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5A3AC92618CB5A003EEF7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5A3ACB2618CB5A003EEF7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B5A3ACD2618CB5A003EEF7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B5A3AD02618CB5A003EEF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B5A3ACD2618CB5A003EEF7C /* MadCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadCircleViewController.swift; sourceTree = "<group>"; };
 		5B5A3AD22618CB5D003EEF7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5A3AD52618CB5D003EEF7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5A3AD72618CB5D003EEF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +99,7 @@
 			children = (
 				5B5A3AC92618CB5A003EEF7C /* AppDelegate.swift */,
 				5B5A3ACB2618CB5A003EEF7C /* SceneDelegate.swift */,
-				5B5A3ACD2618CB5A003EEF7C /* ViewController.swift */,
-				5B5A3ACF2618CB5A003EEF7C /* Main.storyboard */,
+				5B5A3ACD2618CB5A003EEF7C /* MadCircleViewController.swift */,
 				5B5A3AD22618CB5D003EEF7C /* Assets.xcassets */,
 				5B5A3AD42618CB5D003EEF7C /* LaunchScreen.storyboard */,
 				5B5A3AD72618CB5D003EEF7C /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				5B5A3AD62618CB5D003EEF7C /* LaunchScreen.storyboard in Resources */,
 				5B5A3AD32618CB5D003EEF7C /* Assets.xcassets in Resources */,
-				5B5A3AD12618CB5A003EEF7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5A3ACE2618CB5A003EEF7C /* ViewController.swift in Sources */,
+				5B5A3ACE2618CB5A003EEF7C /* MadCircleViewController.swift in Sources */,
 				5B5A3ACA2618CB5A003EEF7C /* AppDelegate.swift in Sources */,
 				5B5A3ACC2618CB5A003EEF7C /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +292,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5B5A3ACF2618CB5A003EEF7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B5A3AD02618CB5A003EEF7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5B5A3AD42618CB5D003EEF7C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73A856J95H;
 				INFOPLIST_FILE = MadCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gkashin.MadCircle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73A856J95H;
 				INFOPLIST_FILE = MadCircle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.gkashin.MadCircle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
